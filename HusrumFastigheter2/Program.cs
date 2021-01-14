@@ -31,7 +31,7 @@ namespace HusrumFastigheter2
                 var entryLog = Controllers.DoorEventsLog.LogEntry("2021-01-14 12:51", "LGH0302", "DÖIN", "0302D");
                 Views.OutPutData.OutPutBool(entryLog);
 
-                var moveTenant = Controllers.DoorEventsLog.MoveTenant("0102A");
+                var moveTenant = Controllers.DoorEventsLog.MoveTenant("0201B");
                 Views.OutPutData.OutPutBool(moveTenant);
                 moveTenant = Controllers.DoorEventsLog.MoveTenant("Wilma Johansson");
                 Views.OutPutData.OutPutBool(moveTenant);
@@ -42,7 +42,7 @@ namespace HusrumFastigheter2
                 addTenant = Controllers.DoorEventsLog.AddTenant("Gunn-Britt Eliasson", "0201");
                 Views.OutPutData.OutPutBool(addTenant);
 
-                moveTenant = Controllers.DoorEventsLog.MoveTenant("0202D", "0301");
+                moveTenant = Controllers.DoorEventsLog.MoveTenant("0202B", "0301");
                 Views.OutPutData.OutPutBool(moveTenant);
                 moveTenant = Controllers.DoorEventsLog.MoveTenant("Lilly Adolfsson", "0202");
                 Views.OutPutData.OutPutBool(moveTenant);
