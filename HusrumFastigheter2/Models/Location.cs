@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HusrumFastigheter2.Models
 {
-    class Location
+    public class Location
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 

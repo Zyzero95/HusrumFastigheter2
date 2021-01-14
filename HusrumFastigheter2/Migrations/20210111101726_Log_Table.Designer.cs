@@ -3,14 +3,16 @@ using System;
 using HusrumFastigheter2.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HusrumFastigheter2.Migrations
 {
     [DbContext(typeof(MyDatabase))]
-    partial class MyDatabaseModelSnapshot : ModelSnapshot
+    [Migration("20210111101726_Log_Table")]
+    partial class Log_Table
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,15 +101,10 @@ namespace HusrumFastigheter2.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("TEXT");
 
-                    b.Property<long?>("LocationID")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Tag")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("LocationID");
 
                     b.ToTable("Tenants");
                 });
@@ -131,15 +128,6 @@ namespace HusrumFastigheter2.Migrations
                     b.Navigation("Event");
 
                     b.Navigation("Tenant");
-                });
-
-            modelBuilder.Entity("HusrumFastigheter2.Models.Tenant", b =>
-                {
-                    b.HasOne("HusrumFastigheter2.Models.Location", "Location")
-                        .WithMany()
-                        .HasForeignKey("LocationID");
-
-                    b.Navigation("Location");
                 });
 #pragma warning restore 612, 618
         }

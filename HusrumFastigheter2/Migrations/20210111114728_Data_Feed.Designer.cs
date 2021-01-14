@@ -3,14 +3,16 @@ using System;
 using HusrumFastigheter2.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HusrumFastigheter2.Migrations
 {
     [DbContext(typeof(MyDatabase))]
-    partial class MyDatabaseModelSnapshot : ModelSnapshot
+    [Migration("20210111114728_Data_Feed")]
+    partial class Data_Feed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

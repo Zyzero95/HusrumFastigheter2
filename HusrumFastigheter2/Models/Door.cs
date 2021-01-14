@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HusrumFastigheter2.Models
 {
-    class Door
+   public class Door
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         

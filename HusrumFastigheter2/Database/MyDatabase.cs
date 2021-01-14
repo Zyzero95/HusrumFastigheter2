@@ -18,6 +18,8 @@ namespace HusrumFastigheter2.Database
 
         public DbSet<Models.Tenant> Tenants { get; set; }
 
+        public DbSet<Models.Log> Logs { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
