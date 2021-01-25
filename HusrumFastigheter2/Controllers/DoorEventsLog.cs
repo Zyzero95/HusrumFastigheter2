@@ -72,8 +72,8 @@ namespace HusrumFastigheter2.Controllers
                 {
                     var door = dataList.Doors.FirstOrDefault(d => d.DoorName == doorName.ToUpper());
                     var @event = dataList.Events.FirstOrDefault(d => d.Code == eventCode.ToUpper());
-                    var tenant = dataList.Tenants.FirstOrDefault(d => d.Tag == tag.ToUpper());
-                    dataList.Logs.Add(new Models.Log { Date = date, Door = door, Event = @event, Tenant = tenant });
+                    var tenantTag = dataList.Tenants.FirstOrDefault(d => d.Tag == tag.ToUpper());
+                    dataList.Logs.Add(new Models.Log { Date = date, Door = door, Event = @event, Tenant = tenantTag });
                     dataList.SaveChanges();
                 }
                 return true;

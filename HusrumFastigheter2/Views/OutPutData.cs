@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HusrumFastigheter2.Views
 {
-    class OutPutData
+    public class OutPutData
     {
         public static void OutPutLog(string searchBy, List<Models.Log> logs)
         {
