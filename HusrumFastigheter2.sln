@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HusrumFastigheter2", "HusrumFastigheter2\HusrumFastigheter2.csproj", "{66911C5A-BA73-4295-B160-8F6691CF504A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HusRumFastigheter3", "HusRumFastigheter3\HusRumFastigheter3.csproj", "{D420D1CF-7A60-4A3F-AE5F-422D1426C7D9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{66911C5A-BA73-4295-B160-8F6691CF504A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66911C5A-BA73-4295-B160-8F6691CF504A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66911C5A-BA73-4295-B160-8F6691CF504A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D420D1CF-7A60-4A3F-AE5F-422D1426C7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D420D1CF-7A60-4A3F-AE5F-422D1426C7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D420D1CF-7A60-4A3F-AE5F-422D1426C7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D420D1CF-7A60-4A3F-AE5F-422D1426C7D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HusrumFastigheter2.Database
 {
-    class MyDatabase : DbContext
+    public class MyDatabase : DbContext
     {
         static string DatabaseFile { get; set; } = @"DataLog.db";
 

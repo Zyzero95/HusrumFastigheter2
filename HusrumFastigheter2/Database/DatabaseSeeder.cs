@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HusrumFastigheter2.Database
 {
-    class DatabaseSeeder
+    public class DatabaseSeeder
     {
         public static void CheckData()
         {
@@ -28,9 +28,9 @@ namespace HusrumFastigheter2.Database
         {
             using(var dataList = new Database.MyDatabase())
             {
-                var doorNames = new[] {"LGH0101", "LGH0102", "LGH0103", "LGH0201", "LGH0202", "LGH0301", "LGH0302", "BLK0101", "BLK0102", "BLK0103", "BLK0201", "BLK0202", "BLK0301", "BLK0302", "VAKT", "TVÄTT", "SOPRUM", "UT" };
+                var doorNames = new[] {"LGH0101", "LGH0102", "LGH0103", "LGH0201", "LGH0202", "LGH0301", "LGH0302", "BLK0101", "BLK0102", "BLK0103", "BLK0201", "BLK0202", "BLK0301", "BLK0302", "VAKT", "TVÄTT", "SOPRUM", "UT", "CYKEL" };
                 var events = new[] {"FDIN", "FDUT", "DÖIN", "DÖUT" };
-                var locations = new[] {"0101", "0102", "0103", "0201", "0202", "0301", "0302", "VAKT", "TVÄTT", "SOPRUM"};
+                var locations = new[] {"0101", "0102", "0103", "0201", "0202", "0301", "0302", "VAKT", "TVÄTT", "SOPRUM", "CYKEL"};
 
                 foreach(var doorName in doorNames)
                 {

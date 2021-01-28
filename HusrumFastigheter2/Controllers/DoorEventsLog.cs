@@ -70,9 +70,14 @@ namespace HusrumFastigheter2.Controllers
             {
                 using (var dataList = new Database.MyDatabase())
                 {
+
                     var door = dataList.Doors.FirstOrDefault(d => d.DoorName == doorName.ToUpper());
                     var @event = dataList.Events.FirstOrDefault(d => d.Code == eventCode.ToUpper());
                     var tenantTag = dataList.Tenants.FirstOrDefault(d => d.Tag == tag.ToUpper());
+                    if (eventCode == null || doorName == null || tag == null)
+                    {
+                        return false;
+                    }
                     dataList.Logs.Add(new Models.Log { Date = date, Door = door, Event = @event, Tenant = tenantTag });
                     dataList.SaveChanges();
                 }
